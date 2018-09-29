@@ -1,0 +1,23 @@
+.container {
+  margin: 0 auto;
+  padding-right: ($gutter / 2) + px;
+  padding-left: ($gutter / 2) + px;
+  @extend .clearfix;
+}
+
+.row {
+  margin-right: -($gutter / 2) + px;
+  margin-left: -($gutter / 2) + px;
+  font-size: 0;
+}
+
+.column {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+@include generate-grid(null, 'start', $columns);
+@for $i from 1 through length($screens) {
+  @include generate-grid(nth($screens, $i), nth($prefixes, $i), $columns);
+}

@@ -1,0 +1,29 @@
+@import "_functions.scss";
+@import "_mixins.scss";
+@import "_extends.scss";
+
+$columns: 12;
+$gutter: 30px;
+$screens: 544px 768px 1024px 1280px 1440px 1920px;
+$prefixes: "mb" "sm" "md" "lg" "xlg" "xxlg";
+
+// Fonts
+$fonts: (
+  "main": ""
+);
+
+$fontSizes: (
+  "ultraSmall": 0.75rem,
+  "small": 0.875rem,
+  "base": 1rem,
+  "medium": 1.125rem,
+  "big": 1.25rem,
+  "large": 1.375rem,
+  "ultraLarge": 1.5rem
+);
+
+// Colors
+$colors: (
+  "white": #fff,
+  "black": #000
+);
