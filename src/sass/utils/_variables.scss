@@ -1,6 +1,7 @@
 @import "_functions.scss";
 @import "_mixins.scss";
 @import "_extends.scss";
+@import "_fonts.scss";
 
 $columns: 12;
 $gutter: 30px;
@@ -9,7 +10,7 @@ $prefixes: "mb" "sm" "md" "lg" "xlg" "xxlg";
 
 // Fonts
 $fonts: (
-  "main": ""
+  "main": "Roboto, Helvetica, Arial, sans-serif"
 );
 
 $fontSizes: (

@@ -1,4 +1,4 @@
-// Layout
+// layout - все что касается основных блоков разметки: html, body, .wrapper, .content, .main, .footer, .header, .sidebar  _layout.scss - содержит стили для html, body, .wrapper, .content, .main. Не включает шапку, футер и сайдбар(ы). Задает box-sizing.
 *, :before, :after {
   box-sizing: border-box;
 }
@@ -14,7 +14,7 @@ html {
 .body {
   display: flex;
   flex-direction: column;
-  // font-family: unquote(get-font("main"));
+  font-family: unquote(get-font("main"));
   -webkit-tap-highlight-color: transparent;
 }
 

@@ -84,15 +84,15 @@ $cols) {
   }
 }
 
-/*
- * Generates an animation for slider based on input data
- *
- * @param {String} $name animation name for @keyframes
- * @param {Number} $slides amount of slides
- * @param {Number} $delay time during that a single slide is shown
- * @param {Number} $transition animation speed between slides (from one to another)
- * @returns {CSS} @keyframes animation
-*/
+
+// Generates an animation for slider based on input data
+
+// @param {String} $name animation name for @keyframes
+// @param {Number} $slides amount of slides
+// @param {Number} $delay time during that a single slide is shown
+// @param {Number} $transition animation speed between slides (from one to another)
+// @returns {CSS} @keyframes animation
+
 @mixin make-slider ($name, $slides, $delay: 5, $transition: 1) {
   // Get total time of animation
   $total-time: ($delay + $transition) * $slides;

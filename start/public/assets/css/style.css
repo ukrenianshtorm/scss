@@ -1,3 +1,12 @@
+/*
+ * Generates an animation for slider based on input data
+ *
+ * @param {String} $name animation name for @keyframes
+ * @param {Number} $slides amount of slides
+ * @param {Number} $delay time during that a single slide is shown
+ * @param {Number} $transition animation speed between slides (from one to another)
+ * @returns {CSS} @keyframes animation
+*/
 .transition {
   transition: all 0.3s ease-in-out;
 }
@@ -9,22 +18,15 @@
   clear: both;
 }
 
-@font-face {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
-}
-
 .container {
   margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 15pxpx;
+  padding-left: 15pxpx;
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -15pxpx;
+  margin-left: -15pxpx;
   font-size: 0;
 }
 
@@ -661,7 +663,6 @@ html {
 .body {
   display: flex;
   flex-direction: column;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
 

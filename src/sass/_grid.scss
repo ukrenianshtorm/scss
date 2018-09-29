@@ -1,13 +1,13 @@
 .container {
   margin: 0 auto;
-  padding-right: ($gutter / 2) + px;
-  padding-left: ($gutter / 2) + px;
+  padding-right: ($gutter / 2);
+  padding-left: ($gutter / 2);
   @extend .clearfix;
 }
 
 .row {
-  margin-right: -($gutter / 2) + px;
-  margin-left: -($gutter / 2) + px;
+  margin-right: -($gutter / 2);
+  margin-left: -($gutter / 2);
   font-size: 0;
 }
 
