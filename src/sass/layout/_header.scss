@@ -15,6 +15,9 @@
     &:active {
       stroke: get-color("primaryOrange");
     }
+    &--active {
+      stroke: get-color("primaryOrange");
+    }
   }
   &__action-counter {
     border-radius: 50%;
@@ -26,7 +29,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%, -10px);
+    transform: translate(-50%, -12px);
   }
 }
 
@@ -37,8 +40,22 @@
 @media (min-width: 768px) {
   .header {
     &__inner {
+      justify-content: flex-start;
       height: 120px;
     }
+    &__actions {
+      margin-left: auto;
+    }
+  }
+
+  .logo {
+    margin-right: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    margin-right: 80px;
   }
 }
 
