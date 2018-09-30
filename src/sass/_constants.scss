@@ -5,11 +5,21 @@
     &_c {
       justify-content: center;
     }
+    &_fe {
+      justify-content: flex-end;
+    }
   }
   &--ai {
     &_c {
       align-items: center;
     }
+    &_fe {
+      align-items: flex-end;
+    }
   }
+}
+
+.const-relative {
+  position: relative;
 }
 // Constants (END)

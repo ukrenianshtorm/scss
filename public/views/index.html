@@ -14,12 +14,6 @@
       <header class="header">
         <div class="container">
           <div class="header__inner">
-            <button class="nav-trigger const-flex const-flex--jc_c" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentControl">
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-              </svg>
-            </button>
             <a class="logo" href="#">
               <img src="assets/images/logo.png" alt="" />
             </a>
@@ -34,12 +28,7 @@
             </nav>
             <div class="header__actions const-flex const-flex--jc_c const-flex--ai_c">
               <button class="header__action const-flex const-flex--jc_c const-flex--ai_c" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28.58" height="28.7" viewBox="0 0 28.58 28.7" fill="currentControl">
-                  <defs>
-                    <style>
-                            .a { stroke: #000; stroke-miterlimit: 10; stroke-width: 0.75px; }
-                        </style>
-                  </defs>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28.58" height="28.7" viewBox="0 0 28.58 28.7" fill="currentColor">
                   <title>
                     search
                   </title>
@@ -49,11 +38,6 @@
               </button>
               <a href="" class="header__action const-flex const-flex--jc_c const-flex--ai_c">
                 <svg xmlns="http://www.w3.org/2000/svg" width="27.84" height="28.89" viewBox="0 0 27.84 28.89" fill="currentColor">
-                  <defs>
-                    <style>
-                            .a { stroke: #000; stroke-miterlimit: 10; stroke-width: 0.5px; }
-                        </style>
-                  </defs>
                   <title>
                     user
                   </title>
@@ -75,21 +59,27 @@
                   </g>
                 </svg>
               </a>
-              <a href="" class="header__action const-flex const-flex--jc_c const-flex--ai_c">
-                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20.78" viewBox="0 0 29 20.78" fill="currentControl">
-                  <defs>
-                    <style>
-                            .a { stroke: #000; stroke-miterlimit: 10; }
-                        </style>
-                  </defs>
+              <a href="" class="header__action const-flex const-flex--jc_c const-flex--ai_c const-relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20.78" viewBox="0 0 29 20.78" fill="currentColor">
                   <title>
                     Cart
                   </title>
                   <path d="M28,6.28H24c0-1-.05-.41-.12-.47l-5-5.13a.51.51,0,0,0-.71-.06.81.81,0,0,0,0,.92l4.53,4.74H6.82l4.52-4.77a.65.65,0,0,0,0-.83.51.51,0,0,0-.71-.06l-5,5.22c-.06.06-.1-.56-.12.44H1a.5.5,0,0,0-.5.5.5.5,0,0,0,.5.5H2.87L5.5,19.89a.49.49,0,0,0,.49.39h17.5a.49.49,0,0,0,.49-.4L26.4,7.28H28a.5.5,0,0,0,.5-.5A.5.5,0,0,0,28,6.28Zm-4.92,13H6.39L3.9,7.28H25.38Z"
                     class="a" />
                 </svg>
+                <span class="header__action-counter header__action const-flex const-flex--jc_c const-flex--ai_c">5</span>
               </a>
             </div>
+            <button class="nav-trigger const-flex const-flex--jc_c  hidden-sm" type="button">
+              <svg class="nav-trigger__icon nav-trigger__icon--menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentControl">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+              </svg>
+              <svg class="nav-trigger__icon nav-trigger__icon--close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                <path fill="none" d="M0 0h24v24H0z" />
+              </svg>
+            </button>
           </div>
         </div>
       </header>
@@ -100,5 +90,20 @@
         footer
       </footer>
     </div>
+    <div class="page-overlay hidden-sm"></div>
+
+    <script>
+      (function () {
+        const navTrigger = document.querySelector('.nav-trigger');
+        const nav = document.querySelector('.nav');
+        const pageOverlay = document.querySelector('.page-overlay');
+
+        navTrigger.addEventListener('click', function () {
+          navTrigger.classList.toggle('js-nav-trigger--active');
+          nav.classList.toggle('js-nav--active');
+          pageOverlay.classList.toggle('js-page-overlay--active');
+        }, false);
+      }());
+    </script>
   </body>
 </html>
