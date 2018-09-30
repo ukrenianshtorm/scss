@@ -1,3 +1,15 @@
 // Constants
-
+.const-flex {
+  display: flex;
+  &--jc {
+    &_c {
+      justify-content: center;
+    }
+  }
+  &--ai {
+    &_c {
+      align-items: center;
+    }
+  }
+}
 // Constants (END)

@@ -1,0 +1,21 @@
+// Nav
+.nav {
+  width: 260px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: get-color("white");
+  color: #34404b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.25);
+  &__inner {
+    padding: 24px 0;
+  }
+  &__item {
+    display: block;
+  }
+}
+
+// Nav(end)

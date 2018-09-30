@@ -33,9 +33,7 @@
   }
 }
 
-@mixin generate-grid($width,
-$prefix,
-$cols) {
+@mixin generate-grid($width, $prefix, $cols) {
   @if $width {
     @media (min-width: $width) {
       .col-#{$prefix} {

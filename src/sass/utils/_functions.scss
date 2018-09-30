@@ -1,4 +1,4 @@
-//Вспомогательные функции для упрощения вычислений и получения данных
+//Auxiliary functions to simplify calculation and data acquisition
 // get font-family from fonts map by name
 @function get-font ($font) {
   @return map-get($fonts, $font);
