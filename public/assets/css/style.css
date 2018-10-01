@@ -43,6 +43,7 @@
 .column {
   display: inline-block;
   vertical-align: top;
+  padding: 0 15px;
   width: 100%;
 }
 
@@ -742,13 +743,23 @@ img {
   vertical-align: middle;
 }
 
-.footer .copyright {
+.footer__copyright {
+  margin-top: 20px;
   font-size: 0.875rem;
-  color: #34404b;
+  color: #28313b;
+}
+
+.footer__link {
+  font-size: 0.875rem;
+  color: #28313b;
 }
 
 .const-flex {
   display: flex;
+}
+
+.const-flex--fd_c {
+  flex-direction: column;
 }
 
 .const-flex--jc_c {

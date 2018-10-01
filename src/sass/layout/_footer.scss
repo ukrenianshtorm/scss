@@ -1,8 +1,13 @@
 // Footer
 .footer {
-  .copyright {
+  &__copyright {
+    margin-top: 20px;
     font-size: get-font-size("small");
-    color: get-color("primaryBlue");
+    color: #28313b;
+  }
+  &__link {
+    font-size: get-font-size("small");
+    color: #28313b;
   }
 }
 

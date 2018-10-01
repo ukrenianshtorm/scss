@@ -1,6 +1,11 @@
 // Constants
 .const-flex {
   display: flex;
+  &--fd {
+    &_c {
+      flex-direction: column;
+    }
+  }
   &--jc {
     &_c {
       justify-content: center;
