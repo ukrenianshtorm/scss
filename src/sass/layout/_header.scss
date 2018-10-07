@@ -47,15 +47,18 @@
       margin-left: auto;
     }
   }
-
   .logo {
-    margin-right: 48px;
+    &--right {
+      margin-right: 48px;
+    }
   }
 }
 
 @media (min-width: 1024px) {
   .logo {
-    margin-right: 80px;
+    &--right {
+      margin-right: 80px;
+    }
   }
 }
 
